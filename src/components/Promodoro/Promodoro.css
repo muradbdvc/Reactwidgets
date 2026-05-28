@@ -1,0 +1,26 @@
+.pomodoro-container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+.pomodoro-timer {
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+.pomodoro-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pomodoro-buttons button {
+  padding: 10px 20px;
+}
+
+.pomodoro-sessions {
+  margin-top: 2rem;
+  opacity: 0.8;
+}

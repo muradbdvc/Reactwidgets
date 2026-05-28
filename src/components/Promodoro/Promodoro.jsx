@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import './Promodoro.css';
 
 export default function PomodoroTimer() {
   // 1. State hooks for tracking configurations and time
@@ -76,23 +77,23 @@ export default function PomodoroTimer() {
   const formatTime = (num) => String(num).padStart(2, '0');
 
   return (
-    <div style={{ textAlign: 'center', padding: '2rem', maxWidth: '400px', margin: 'auto' }}>
+    <div className="pomodoro-container">
       <h2>{isBreak ? "Break Mode ☕" : "Focus Session 🎯"}</h2>
       
-      <h1 style={{ fontSize: '4rem', margin: '1rem 0' }}>
+      <h1 className="pomodoro-timer">
         {formatTime(minutes)}:{formatTime(seconds)}
       </h1>
 
-      <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
-        <button onClick={toggleTimer} style={{ padding: '10px 20px' }}>
+      <div className="pomodoro-buttons">
+        <button onClick={toggleTimer}>
           {isActive ? 'Pause' : 'Start'}
         </button>
-        <button onClick={resetTimer} style={{ padding: '10px 20px' }}>
+        <button onClick={resetTimer}>
           Reset
         </button>
       </div>
 
-      <p style={{ marginTop: '2rem', opacity: 0.8 }}>
+      <p className="pomodoro-sessions">
         Sessions completed today: <strong>{completedSessions}</strong>
       </p>
     </div>
