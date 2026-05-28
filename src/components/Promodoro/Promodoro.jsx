@@ -1,6 +1,31 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Promodoro.css';
 
+const playTune = (type) => {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+
+    if (type === 'work') {
+      osc.frequency.setValueAtTime(523, ctx.currentTime);
+      osc.frequency.setValueAtTime(659, ctx.currentTime + 0.15);
+      osc.frequency.setValueAtTime(784, ctx.currentTime + 0.3);
+    } else {
+      osc.frequency.setValueAtTime(784, ctx.currentTime);
+      osc.frequency.setValueAtTime(659, ctx.currentTime + 0.15);
+      osc.frequency.setValueAtTime(523, ctx.currentTime + 0.3);
+    }
+
+    gain.gain.setValueAtTime(0.3, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.6);
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.6);
+  } catch {}
+};
+
 export default function PomodoroTimer() {
   // 1. State hooks for tracking configurations and time
   const [minutes, setMinutes] = useState(25);
@@ -54,12 +79,14 @@ export default function PomodoroTimer() {
       setMinutes(5); 
       setSeconds(0);
       setCompletedSessions((prev) => prev + 1);
+      playTune('work');
       alert("Time for a break! Great job.");
     } else {
       // Finished break -> Back to work
       setIsBreak(false);
       setMinutes(25);
       setSeconds(0);
+      playTune('break');
       alert("Break's over! Back to focus mode.");
     }
   };

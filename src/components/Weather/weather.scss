@@ -68,4 +68,36 @@ h1{
     width: 26px;
     margin-top: 10px;
 }
+
+@media (max-width: 400px) {
+  .weather {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .temperature {
+    font-size: 50px;
+  }
+
+  .location {
+    font-size: 28px;
+  }
+
+  .weather-data {
+    gap: 24px;
+  }
+
+  .weather-data .col {
+    font-size: 18px;
+  }
+
+  .search-bar input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .weather-icon {
+    width: 100px;
+  }
+}
 //*https://youtu.be/zs1Nq2s_uy4?si=Ahblky2GIIzFddt8 /*/

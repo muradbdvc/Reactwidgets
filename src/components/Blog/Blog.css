@@ -1,0 +1,237 @@
+.blog-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* ---- List view ---- */
+
+.blog-list-title {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.blog-list-subtitle {
+  color: #a0a0c0;
+  margin-bottom: 2.5rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.blog-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.blog-thumb {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.blog-card-body {
+  padding: 1rem 1.25rem 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card-meta {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 0.78rem;
+  color: #667eea;
+  margin-bottom: 0.4rem;
+}
+
+.blog-card-body h3 {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 0.35rem;
+  line-height: 1.4;
+}
+
+.blog-card-body p {
+  font-size: 0.85rem;
+  color: #a0a0c0;
+  line-height: 1.5;
+  flex: 1;
+}
+
+/* ---- Single post view ---- */
+
+.blog-post {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2.5rem;
+  animation: fadeInUp 0.5s ease;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.back-btn {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #a0a0c0;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.back-btn:hover {
+  color: #fff;
+  border-color: #667eea;
+}
+
+.post-banner {
+  height: 180px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-post .meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.blog-post h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.blog-post .subtitle {
+  color: #a0a0c0;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.blog-post h3 {
+  color: #e0e0e0;
+  font-size: 1.2rem;
+  margin: 2rem 0 1rem;
+}
+
+.blog-post p {
+  color: #c0c0d0;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.blog-post ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.blog-post ul li {
+  color: #c0c0d0;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+}
+
+.blog-post .code-block {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.blog-post .code-block code {
+  font-family: 'Fira Code', 'Cascadia Code', monospace;
+  font-size: 0.9rem;
+  color: #a0d0ff;
+  white-space: pre;
+}
+
+.blog-post .divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 2rem 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-page {
+    padding: 1.5rem 1rem;
+  }
+
+  .blog-post {
+    padding: 1.5rem;
+  }
+
+  .blog-post h2 {
+    font-size: 1.4rem;
+  }
+
+  .blog-thumb {
+    height: 110px;
+    font-size: 2rem;
+  }
+}

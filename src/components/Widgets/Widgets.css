@@ -1,0 +1,38 @@
+.widgets-page {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.widgets-page h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.widgets-page > p {
+  color: #a0a0c0;
+  margin-bottom: 2.5rem;
+}
+
+.widgets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+  .widgets-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .widgets-page {
+    padding: 2rem 1rem;
+  }
+}

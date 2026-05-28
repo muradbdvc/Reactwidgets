@@ -1,12 +1,19 @@
 @import "tailwindcss";
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.app{
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #0f0f1a;
+  color: #e0e0e0;
   min-height: 100vh;
-  display: grid;
-  background: #e2d4ff;
+}
+
+.app {
+  min-height: calc(100vh - 64px);
+  background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
 }

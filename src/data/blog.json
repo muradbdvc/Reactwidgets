@@ -1,0 +1,223 @@
+[
+  {
+    "id": "building-reactwidgets",
+    "title": "ReactWidgets — Building Mini Apps with React",
+    "date": "May 29, 2026",
+    "category": "Dev Log",
+    "subtitle": "A step-by-step recap of recent work to prepare for the next phase.",
+    "thumbnail": { "gradient": "linear-gradient(135deg, #667eea, #764ba2)", "icon": "⚛️" },
+    "sections": [
+      { "type": "heading", "text": "Overview" },
+      {
+        "type": "paragraph",
+        "text": "ReactWidgets is a collection of interactive mini-apps built with React 19, Vite 8, and Tailwind CSS 4. This post documents the recent setup, component builds, styling improvements, and next steps."
+      },
+      { "type": "divider" },
+      { "type": "heading", "text": "Step 1: Project Scaffolding" },
+      {
+        "type": "paragraph",
+        "text": "Initialized the project with Vite and React, then installed dependencies including Tailwind CSS v4 with the Vite plugin, Sass, and React Router."
+      },
+      {
+        "type": "code",
+        "text": "npm create vite@latest reactwidgets -- --template react\nnpm install react-router-dom sass-embedded @tailwindcss/vite"
+      },
+      { "type": "heading", "text": "Step 2: Weather Widget" },
+      {
+        "type": "paragraph",
+        "text": "Built a weather widget that fetches real-time data from the OpenWeatherMap API. Features include city search, dynamic weather icons, and humidity/wind speed display. Styled with a purple gradient background in SCSS."
+      },
+      {
+        "type": "list",
+        "items": [
+          "API integration with fetch and environment variable for API key",
+          "Dynamic icon mapping based on weather condition codes",
+          "Responsive layout for mobile screens"
+        ]
+      },
+      { "type": "heading", "text": "Step 3: Calculator Widget" },
+      {
+        "type": "paragraph",
+        "text": "A fully functional calculator supporting basic arithmetic operations. Styled with a dark theme and grid-based button layout in SCSS. The display background was matched to button colors for visual consistency."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Grid layout for numeric and operator buttons",
+          "Clear, delete, and percentage operations",
+          "Dark theme with hover states"
+        ]
+      },
+      { "type": "heading", "text": "Step 4: Pomodoro Timer Widget" },
+      {
+        "type": "paragraph",
+        "text": "A productivity timer that cycles between 25-minute focus sessions and 5-minute breaks. Tracks completed sessions in localStorage for persistence across page reloads."
+      },
+      {
+        "type": "list",
+        "items": [
+          "25/5 minute work-break cycle",
+          "localStorage persistence for session count",
+          "Separated CSS from inline styles",
+          "Smooth dark gradient theme"
+        ]
+      },
+      { "type": "heading", "text": "Step 5: Navigation & Routing" },
+      {
+        "type": "paragraph",
+        "text": "Set up React Router with pages for Home, Widgets, Portfolio, About, Blog, and Contact. A responsive navigation bar with a hamburger menu toggle on mobile was added."
+      },
+      {
+        "type": "list",
+        "items": [
+          "BrowserRouter wrapping the app in main.jsx",
+          "Route-based rendering in App.jsx",
+          "Sticky nav with gradient branding and animated underline",
+          "Mobile hamburger menu with smooth toggle animation"
+        ]
+      },
+      { "type": "heading", "text": "Step 6: UI/UX & Responsive Polish" },
+      {
+        "type": "paragraph",
+        "text": "The entire layout was modernized with a dark gradient background, consistent typography, and responsive breakpoints. The Home page now features a hero section with feature cards."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Dark gradient global background",
+          "Home hero with animated CTA button",
+          "Widgets grid using responsive columns",
+          "Removed global body styles from Calculator.scss that broke page layout",
+          "Fade-in animations on page load"
+        ]
+      },
+      { "type": "divider" },
+      { "type": "heading", "text": "Next Preparation" },
+      {
+        "type": "paragraph",
+        "text": "The following areas are ready for the next phase of development:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Content pages ready for real content",
+          "Blog engine primed for markdown rendering or CMS integration",
+          "Calculator refactor needed — replace eval() with a proper expression parser",
+          "Additional widgets can be added to the grid",
+          "Consider introducing Zustand or Context API for shared state"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "getting-started-react",
+    "title": "Getting Started with React 19",
+    "date": "May 28, 2026",
+    "category": "Tutorial",
+    "subtitle": "A beginner-friendly guide to building your first React app.",
+    "thumbnail": { "gradient": "linear-gradient(135deg, #f093fb, #f5576c)", "icon": "📘" },
+    "sections": [
+      { "type": "heading", "text": "Why React?" },
+      {
+        "type": "paragraph",
+        "text": "React is one of the most popular front-end libraries for building user interfaces. With the release of React 19, the developer experience has improved significantly with new features like React Server Components, Actions, and improved hooks."
+      },
+      { "type": "heading", "text": "Setting Up Your First Project" },
+      {
+        "type": "paragraph",
+        "text": "The easiest way to start is with Vite, a fast build tool that provides instant hot module replacement and optimized builds."
+      },
+      {
+        "type": "code",
+        "text": "npm create vite@latest my-app -- --template react\ncd my-app\nnpm install\nnpm run dev"
+      },
+      { "type": "heading", "text": "Understanding Components" },
+      {
+        "type": "paragraph",
+        "text": "Components are the building blocks of React. A component is a JavaScript function that returns UI elements. You can compose components together to build complex interfaces."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Functional components with hooks",
+          "Props for passing data between components",
+          "State management with useState and useReducer"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "styling-with-tailwind-v4",
+    "title": "Styling with Tailwind CSS v4",
+    "date": "May 27, 2026",
+    "category": "Tutorial",
+    "subtitle": "Explore the new utility-first workflow in Tailwind CSS v4.",
+    "thumbnail": { "gradient": "linear-gradient(135deg, #4facfe, #00f2fe)", "icon": "🎨" },
+    "sections": [
+      { "type": "heading", "text": "What's New in v4" },
+      {
+        "type": "paragraph",
+        "text": "Tailwind CSS v4 introduces a completely redesigned engine built on Lightning CSS, offering faster builds, CSS-first configuration, and a new utility approach."
+      },
+      { "type": "heading", "text": "CSS-First Configuration" },
+      {
+        "type": "paragraph",
+        "text": "Instead of a tailwind.config.js file, v4 uses native CSS with @theme, @utility, and @variant directives. This makes configuration more intuitive and eliminates the config file overhead."
+      },
+      {
+        "type": "code",
+        "text": "@import \"tailwindcss\";\n\n@theme {\n  --color-primary: #667eea;\n  --color-secondary: #764ba2;\n}"
+      },
+      { "type": "heading", "text": "Vite Plugin Integration" },
+      {
+        "type": "paragraph",
+        "text": "The @tailwindcss/vite plugin provides seamless integration with Vite, enabling on-the-fly CSS processing and instant HMR updates."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Zero-config setup with Vite plugin",
+          "Native CSS @import for Tailwind directives",
+          "Faster build times with Lightning CSS"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "responsive-design-patterns",
+    "title": "Responsive Design Patterns in 2026",
+    "date": "May 26, 2026",
+    "category": "Design",
+    "subtitle": "Modern approaches to building layouts that work everywhere.",
+    "thumbnail": { "gradient": "linear-gradient(135deg, #43e97b, #38f9d7)", "icon": "📱" },
+    "sections": [
+      { "type": "heading", "text": "Mobile-First Mindset" },
+      {
+        "type": "paragraph",
+        "text": "Designing for mobile first forces you to prioritize content and core functionality. You then progressively enhance the experience for larger screens using CSS Grid, media queries, and container queries."
+      },
+      { "type": "heading", "text": "CSS Grid for Layouts" },
+      {
+        "type": "paragraph",
+        "text": "CSS Grid with auto-fit and minmax is the most powerful tool for responsive layouts without media queries. It automatically adjusts columns based on available space."
+      },
+      {
+        "type": "code",
+        "text": ".grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\n  gap: 1.5rem;\n}"
+      },
+      { "type": "heading", "text": "Container Queries" },
+      {
+        "type": "paragraph",
+        "text": "Container queries allow components to respond to their parent container's size rather than the viewport. This is ideal for reusable components that appear in various contexts."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Use @container for component-level responsiveness",
+          "Combine with CSS Grid for flexible layouts",
+          "Avoid excessive media queries for reusable components"
+        ]
+      }
+    ]
+  }
+]
