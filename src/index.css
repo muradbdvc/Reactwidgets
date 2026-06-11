@@ -16,4 +16,7 @@ body {
 .app {
   min-height: calc(100vh - 64px);
   background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+  width: 1240px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }

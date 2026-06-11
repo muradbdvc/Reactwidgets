@@ -219,5 +219,87 @@
         ]
       }
     ]
+  },
+  {
+    "id": "building-contact-form",
+    "title": "Building a Contact Form with React — Step by Step",
+    "date": "May 30, 2026",
+    "category": "Tutorial",
+    "subtitle": "A hands-on guide to creating a fully functional contact form with localStorage persistence and an embedded map.",
+    "thumbnail": { "gradient": "linear-gradient(135deg, #f093fb, #f5576c)", "icon": "📬" },
+    "sections": [
+      { "type": "heading", "text": "Overview" },
+      {
+        "type": "paragraph",
+        "text": "In this post, we walk through building a contact form component in React. The form collects name, email, phone number, subject, and a message — then saves submissions to localStorage and shows a success state. We also add a location map using an OpenStreetMap iframe."
+      },
+      { "type": "divider" },
+      { "type": "heading", "text": "Step 1: Setting Up State" },
+      {
+        "type": "paragraph",
+        "text": "We use a single form state object to track all input fields. Each field's value is updated via a shared handleChange handler that uses the input's name attribute."
+      },
+      {
+        "type": "code",
+        "text": "const [form, setForm] = useState({\n  name: '', email: '', phone: '',\n  subject: '', message: ''\n});\n\nconst handleChange = (e) => {\n  setForm({ ...form, [e.target.name]: e.target.value });\n};"
+      },
+      { "type": "heading", "text": "Step 2: Form Layout" },
+      {
+        "type": "paragraph",
+        "text": "The form uses a two-column grid for name/email and phone/subject pairs, with the message textarea spanning the full width. Each field is wrapped in a form-group div with a label and styled input."
+      },
+      {
+        "type": "code",
+        "text": "<div className=\"form-row\">\n  <div className=\"form-group\">\n    <label htmlFor=\"name\">Name</label>\n    <input id=\"name\" name=\"name\" type=\"text\"\n           value={form.name} onChange={handleChange} required />\n  </div>\n  <div className=\"form-group\">\n    <label htmlFor=\"email\">Email</label>\n    <input id=\"email\" name=\"email\" type=\"email\"\n           value={form.email} onChange={handleChange} required />\n  </div>\n</div>"
+      },
+      { "type": "heading", "text": "Step 3: Form Submission & localStorage" },
+      {
+        "type": "paragraph",
+        "text": "On submit, we prevent the default browser behavior, read existing messages from localStorage, append the new entry with a timestamp, and save it back. Then we show a success view."
+      },
+      {
+        "type": "code",
+        "text": "const handleSubmit = (e) => {\n  e.preventDefault();\n  const entries = JSON.parse(\n    localStorage.getItem('contact_messages') || '[]'\n  );\n  entries.push({ ...form, timestamp: new Date().toISOString() });\n  localStorage.setItem('contact_messages', JSON.stringify(entries));\n  setSubmitted(true);\n  setForm({ name: '', email: '', phone: '',\n            subject: '', message: '' });\n};"
+      },
+      { "type": "heading", "text": "Step 4: Success State" },
+      {
+        "type": "paragraph",
+        "text": "When submitted is true, we render a success message with a green checkmark icon and a 'Send Another' button that resets the submitted state back to the form."
+      },
+      {
+        "type": "code",
+        "text": "if (submitted) {\n  return (\n    <div className=\"contact-success\">\n      <span className=\"success-icon\">✓</span>\n      <h2>Message Sent!</h2>\n      <p>Thank you for reaching out.</p>\n      <button onClick={() => setSubmitted(false)}>\n        Send Another\n      </button>\n    </div>\n  );\n}"
+      },
+      { "type": "heading", "text": "Step 5: Adding a Location Map" },
+      {
+        "type": "paragraph",
+        "text": "Beside the form, we embed an OpenStreetMap iframe. This provides a visual location reference without needing a Google Maps API key. The map is wrapped in a container with rounded corners and an address label below."
+      },
+      {
+        "type": "code",
+        "text": "<div className=\"contact-map\">\n  <h3>Our Location</h3>\n  <div className=\"map-container\">\n    <iframe\n      title=\"Location Map\"\n      src=\"https://www.openstreetmap.org/export/embed.html?bbox=...\"\n      allowFullScreen loading=\"lazy\" />\n  </div>\n  <div className=\"map-info\">\n    <p>123 Widget Street, React City</p>\n  </div>\n</div>"
+      },
+      { "type": "heading", "text": "Step 6: Responsive Layout" },
+      {
+        "type": "paragraph",
+        "text": "The form and map sit side by side on desktop using flexbox. On screens narrower than 800px, they stack vertically. The form rows also collapse from two columns to one at 600px."
+      },
+      {
+        "type": "code",
+        "text": ".contact-layout {\n  display: flex;\n  gap: 2rem;\n  align-items: flex-start;\n}\n\n@media (max-width: 800px) {\n  .contact-layout {\n    flex-direction: column;\n  }\n}"
+      },
+      { "type": "divider" },
+      { "type": "heading", "text": "Key Takeaways" },
+      {
+        "type": "list",
+        "items": [
+          "Use a single state object with a generic handleChange for simple forms",
+          "localStorage is perfect for client-side demo persistence — no backend needed",
+          "A success state provides clear feedback after form submission",
+          "OpenStreetMap iframes are a free, API-key-free alternative for embedded maps",
+          "Flexbox with media queries keeps the layout clean across screen sizes"
+        ]
+      }
+    ]
   }
 ]

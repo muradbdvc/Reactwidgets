@@ -11,7 +11,11 @@ import humidity_icon from '../../assets/humidity.png'
 
 const Weather = () => {
   const inputRef = useRef()
-  const [weatherData, setWeatherData]=useState(false);
+  const [weatherData, setWeatherData] = useState(false);
+  const [suggestions, setSuggestions] = useState([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const debounceRef = useRef();
+
   const allIcons = {
     "01d":clear_icon,
     "01n":clear_icon,
@@ -29,12 +33,11 @@ const Weather = () => {
     "13n":snow_icon,
   }
 
-  const search = async (city)=>{
+  const search = async (city) => {
     try{
       const url =`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_ID}`;
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data);
       const icon = allIcons[data.weather[0].icon] || clear_icon;
       setWeatherData({
         humidity: data.main.humidity,
@@ -42,22 +45,61 @@ const Weather = () => {
         temperature: Math.floor(data.main.temp),
         location: data.name,
         icon: icon
-
-      })
+      });
+      localStorage.setItem('last_city', city);
+      setShowSuggestions(false);
     }catch(error){
     }
   }
 
-useEffect(()=>{
-  search("london");
-},[])
+  const fetchSuggestions = async (query) => {
+    if (!query.trim()) {
+      setSuggestions([]);
+      return;
+    }
+    try {
+      const res = await fetch(
+        `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${import.meta.env.VITE_APP_ID}`
+      );
+      const data = await res.json();
+      setSuggestions(data.map((city) => `${city.name}, ${city.country}`));
+      setShowSuggestions(true);
+    } catch {}
+  }
+
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    if (inputRef.current) inputRef.current.value = value;
+    clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(() => fetchSuggestions(value), 300);
+  }
+
+  const selectSuggestion = (city) => {
+    if (inputRef.current) inputRef.current.value = city.split(',')[0];
+    setShowSuggestions(false);
+    search(city.split(',')[0]);
+  }
+
+  useEffect(() => {
+    const lastCity = localStorage.getItem('last_city') || 'london';
+    search(lastCity);
+  }, [])
 
   return (
     <div>
         <div className="weather">
             <div className="search-bar">
-                <input ref={inputRef} type="text" placeholder='Serach'/>
-                <img src={search_icon} alt="" onClick={()=>search(inputRef.current.value)} />
+                <input ref={inputRef} type="text" placeholder='Search' onChange={handleInputChange} onBlur={() => setTimeout(() => setShowSuggestions(false), 200)} onKeyDown={(e) => e.key === 'Enter' && search(inputRef.current.value)} />
+                <img src={search_icon} alt="" onClick={() => search(inputRef.current.value)} />
+                {showSuggestions && suggestions.length > 0 && (
+                  <div className="suggestions">
+                    {suggestions.map((s, i) => (
+                      <div key={i} className="suggestion-item" onClick={() => selectSuggestion(s)}>
+                        {s}
+                      </div>
+                    ))}
+                  </div>
+                )}
             </div>
             <img src={weatherData.icon} alt="" className='weather-icon' />
             <p className='temperature'>{weatherData.temperature}°C</p>
