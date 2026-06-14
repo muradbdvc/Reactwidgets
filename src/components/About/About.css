@@ -1,0 +1,379 @@
+.about-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* ---- Hero ---- */
+
+.about-hero {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.hero-content {
+  flex: 1;
+  animation: fadeInUp 0.5s ease;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #e0e0e0;
+  margin-bottom: 1.25rem;
+}
+
+.hero-content h1 br {
+  display: none;
+}
+
+.hero-content > p {
+  font-size: 1.05rem;
+  color: #a0a0c0;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(102, 126, 234, 0.5);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #a0a0c0;
+  font-weight: 600;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  border-color: #667eea;
+}
+
+/* ---- Phone Mockup ---- */
+
+.hero-visual {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInUp 0.6s ease 0.1s backwards;
+}
+
+.phone-mockup {
+  width: 260px;
+  height: 480px;
+  background: linear-gradient(145deg, #2a2a40, #1a1a2e);
+  border-radius: 36px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  position: relative;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.phone-notch {
+  width: 80px;
+  height: 18px;
+  background: #1a1a2e;
+  border-radius: 0 0 12px 12px;
+  margin: -12px auto 8px;
+}
+
+.phone-screen {
+  width: 100%;
+  height: calc(100% - 30px);
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08));
+  border-radius: 24px;
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.screen-header {
+  display: flex;
+  gap: 6px;
+}
+
+.screen-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.screen-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.screen-card {
+  height: 70px;
+  background: linear-gradient(90deg, rgba(102, 126, 234, 0.25), rgba(118, 75, 162, 0.25));
+  border-radius: 12px;
+}
+
+.screen-row {
+  display: flex;
+  gap: 10px;
+}
+
+.screen-square {
+  flex: 1;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+}
+
+.screen-bar {
+  height: 8px;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.screen-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  margin: 0 auto;
+  opacity: 0.6;
+}
+
+/* ---- Trusted Bar ---- */
+
+.trusted-bar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  animation: fadeInUp 0.5s ease 0.2s backwards;
+}
+
+.trusted-label {
+  font-size: 0.82rem;
+  color: #a0a0c0;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.trusted-logos {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.logo-placeholder {
+  font-size: 0.85rem;
+  color: #a0a0c0;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+/* ---- Team Section ---- */
+
+.team-section {
+  margin-top: 4rem;
+  text-align: center;
+  animation: fadeInUp 0.5s ease 0.3s backwards;
+}
+
+.team-section h2 {
+  font-size: 1.8rem;
+  color: #e0e0e0;
+  margin-bottom: 0.35rem;
+}
+
+.team-subtitle {
+  color: #a0a0c0;
+  font-size: 0.9rem;
+  margin-bottom: 2.5rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem 1.25rem;
+  text-align: center;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.team-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.team-card h3 {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 0.3rem;
+}
+
+.team-role {
+  display: block;
+  font-size: 0.78rem;
+  color: #667eea;
+  margin-bottom: 0.4rem;
+  word-break: break-all;
+}
+
+.team-card p {
+  font-size: 0.82rem;
+  color: #a0a0c0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .about-hero {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .hero-content > p {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .phone-mockup {
+    width: 220px;
+    height: 400px;
+  }
+
+  .trusted-bar {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .trusted-logos {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-page {
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h1 br {
+    display: inline;
+  }
+
+  .phone-mockup {
+    width: 180px;
+    height: 340px;
+    border-radius: 28px;
+    padding: 8px;
+  }
+
+  .phone-screen {
+    padding: 12px 10px;
+    border-radius: 20px;
+  }
+
+  .screen-card {
+    height: 50px;
+  }
+
+  .screen-square {
+    height: 36px;
+  }
+
+  .trusted-logos {
+    gap: 1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

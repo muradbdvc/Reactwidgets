@@ -85,7 +85,7 @@ export default function Contact() {
           <div className="map-container">
             <iframe
               title="Location Map"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-74.013%2C40.703%2C-73.969%2C40.725&layer=mapnik"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=18/23.230610/91.114651&layer=mapnik"
               allowFullScreen
               loading="lazy"
             />

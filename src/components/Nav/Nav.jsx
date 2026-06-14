@@ -9,7 +9,7 @@ export default function Nav() {
 
   return (
     <nav className="nav">
-      <h1 className="nav-title">ReactWidgets</h1>
+      <NavLink to="/" end onClick={closeMenu}><h1 className="nav-title">ReactWidgets</h1></NavLink>
       <button className={`nav-toggle ${open ? 'open' : ''}`} onClick={() => setOpen(!open)} aria-label="Toggle menu">
         <span /><span /><span />
       </button>
