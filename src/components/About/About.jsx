@@ -1,44 +1,45 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './About.css';
-
-const loadingMessage = "Loading data...";
 
 export default function About() {
   const [teams, setTeams] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+  const [search, setSearch] = useState('');
   const perPage = 20;
 
-  const totalPages = Math.ceil(teams.length / perPage);
-  const start = (currentPage - 1) * perPage;
-  const paginatedTeams = teams.slice(start, start + perPage);
+  const fetchCountries = async () => {
+    setIsLoading(true);
+    setError(null);
+    try {
+      const res = await fetch('https://restcountries.com/v3.1/all?fields=name,cca2');
+      if (!res.ok) throw Error('Failed to fetch countries');
+      const data = await res.json();
+      const mapped = data
+        .filter((c) => c.name?.common)
+        .map((c) => ({ name: c.name.common, code: c.cca2 }))
+        .sort((a, b) => a.name.localeCompare(b.name));
+      setTeams(mapped);
+    } catch (err) {
+      setError(err.message);
+    }
+    setIsLoading(false);
+  };
 
   useEffect(() => {
-    const myHeaders = new Headers();
-    myHeaders.append("x-apisports-key", "4fe9e0ce8cd2912c85a042d463687969");
-    const requestOptions = { method: 'GET', headers: myHeaders, redirect: 'follow' };
-
-    fetch("https://v3.football.api-sports.io/countries", requestOptions)
-      .then((res) => {
-        if(!res.ok){
-          throw Error("fetching error")
-        }
-        return res.json()
-      })
-      .then((data) => {
-        if (data?.response) {
-          setTeams(data.response);
-          setCurrentPage(1);
-        }
-        setIsLoading(false)
-        setError(null)
-      })
-      .catch((err) => {
-        setError(err.message)
-        setIsLoading(false)
-      });
+    fetchCountries();
   }, []);
+
+  const filtered = teams.filter((t) =>
+    t.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const totalPages = Math.ceil(filtered.length / perPage);
+  const start = (currentPage - 1) * perPage;
+  const paginatedTeams = filtered.slice(start, start + perPage);
+
   return (
     <div className="about-page">
     <div className="about-hero">
@@ -88,17 +89,24 @@ export default function About() {
       </div>
 
       <div className="team-section">
-        <h2>Teams</h2>
-        <p className="team-subtitle">Data fetched via useEffect on page load.</p>
+        <h2>Countries</h2>
+        <p className="team-subtitle">Search a country to browse its football players.</p>
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search country..."
+          value={search}
+          onChange={(e) => { setSearch(e.target.value); setCurrentPage(1); }}
+        />
+        {error && <p className="error-msg">{error}</p>}
+        {isLoading && <p className="loading-msg">Loading countries...</p>}
         <div className="team-grid">
-          {error && <p>{error} </p> }
-          {isLoading && loadingMessage }
-          {teams && paginatedTeams.map((item, i) => (
-            <div className="team-card" key={item.code || i}>
+          {paginatedTeams.map((item, i) => (
+            <Link to={`/about/country/${encodeURIComponent(item.name)}`} className="team-card" key={item.code || i}>
               <div className="team-avatar">{(item.name || '?').charAt(0)}</div>
-              <h3>{item.name || 'Unknown'}</h3>
+              <h3>{item.name}</h3>
               <span className="team-role">{item.code || ''}</span>
-            </div>
+            </Link>
           ))}
         </div>
         {totalPages > 1 && (

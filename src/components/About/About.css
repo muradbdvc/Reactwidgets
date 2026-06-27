@@ -233,6 +233,62 @@
   margin-bottom: 2.5rem;
 }
 
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+
+.search-input::placeholder {
+  color: #666688;
+}
+
+.search-input:focus {
+  border-color: #667eea;
+}
+
+.player-search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.player-search-bar .search-input {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.player-search-btn {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.player-search-btn:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.player-search-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -245,6 +301,9 @@
   border-radius: 16px;
   padding: 2rem 1.25rem;
   text-align: center;
+  text-decoration: none;
+  color: inherit;
+  display: block;
   transition: transform 0.25s ease, background 0.25s ease;
 }
 
@@ -308,6 +367,42 @@
 .pagination button:hover:not(:disabled) {
   color: #fff;
   border-color: #667eea;
+}
+
+.back-link {
+  display: inline-block;
+  color: #667eea;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  transition: opacity 0.2s ease;
+}
+
+.back-link:hover {
+  opacity: 0.75;
+}
+
+.detail-title {
+  font-size: 2rem;
+  color: #e0e0e0;
+  margin-bottom: 0.35rem;
+}
+
+.error-msg {
+  color: #f87171;
+  text-align: center;
+}
+
+.loading-msg {
+  color: #a0a0c0;
+  text-align: center;
+}
+
+.team-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
 }
 
 .pagination button:disabled {

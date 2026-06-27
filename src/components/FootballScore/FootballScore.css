@@ -1,0 +1,260 @@
+.football-widget {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.25rem;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.fw-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.fw-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.fw-title {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.fw-live-badge {
+  background: #dc2626;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+}
+
+.fw-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fw-attribution {
+  font-size: 0.6rem;
+  color: #666688;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.fw-attribution:hover {
+  color: #a0a0c0;
+}
+
+.fw-refresh {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #a0a0c0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.fw-refresh:hover:not(:disabled) {
+  color: #fff;
+  border-color: #667eea;
+}
+
+.fw-refresh:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.fw-error {
+  color: #f87171;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.fw-loading {
+  color: #a0a0c0;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.fw-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fw-league-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.fw-league-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.25rem 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #8888aa;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 0.25rem;
+}
+
+.fw-league-logo {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+.fw-date-live {
+  color: #f87171;
+  font-weight: 700;
+  font-size: 0.75rem;
+  animation: fw-pulse 1.2s ease-in-out infinite;
+}
+
+.fw-date-label {
+  color: #aaaacc;
+  font-weight: 600;
+  font-size: 0.72rem;
+}
+
+.fw-league-name {
+  color: #8888aa;
+  font-weight: 500;
+}
+
+.fw-card {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.fw-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.fw-card-live {
+  background: rgba(220, 38, 38, 0.06);
+}
+
+.fw-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.fw-team {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: #d0d0e0;
+  min-width: 0;
+}
+
+.fw-team span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fw-team-away {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.fw-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.fw-score-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  min-width: 72px;
+  justify-content: center;
+}
+
+.fw-score {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e0e0e0;
+}
+
+.fw-score-num {
+  min-width: 1.2em;
+  text-align: center;
+}
+
+.fw-score-win {
+  color: #4ade80;
+}
+
+.fw-colon {
+  opacity: 0.35;
+}
+
+.fw-live-pulse {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #f87171;
+  animation: fw-pulse 1.2s ease-in-out infinite;
+  text-transform: uppercase;
+}
+
+@keyframes fw-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.fw-status-tag {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #8888aa;
+  text-transform: uppercase;
+}
+
+@media (max-width: 400px) {
+  .football-widget {
+    padding: 1rem;
+  }
+
+  .fw-team {
+    font-size: 0.74rem;
+  }
+
+  .fw-score {
+    font-size: 0.9rem;
+  }
+
+  .fw-score-wrap {
+    min-width: 60px;
+  }
+}

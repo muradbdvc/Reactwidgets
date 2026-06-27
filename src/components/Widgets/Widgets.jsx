@@ -3,6 +3,8 @@ import Weather from '../Weather/Weather';
 import Calculator from '../Calculator/Calculator';
 import Promodoro from '../Promodoro/Promodoro';
 import CodeTester from '../CodeTester/CodeTester';
+import FootballScore from '../FootballScore/FootballScore';
+import ScoreBoard from '../ScoreBoard/ScoreBoard';
 import './Widgets.css';
 
 export default function Widgets() {
@@ -15,6 +17,8 @@ export default function Widgets() {
         <Calculator />
         <Promodoro />
         <CodeTester />
+        <FootballScore />
+        <ScoreBoard />
       </div>
     </div>
   );
