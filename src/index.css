@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;
@@ -19,4 +21,12 @@ body {
   width: 1240px;
   margin: 0 auto;
   padding: 40px 20px;
+}
+
+.food-cards{
+  border-radius: 12px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap: 20px;
 }

@@ -1,0 +1,1326 @@
+{
+  "argentina": [
+    {
+      "id": 1,
+      "name": "Lionel Messi",
+      "position": "Forward",
+      "number": 10,
+      "age": 38,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Lionel_Messi_NE_Revolution_Inter_Miami_7.9.25-055.jpg/120px-Lionel_Messi_NE_Revolution_Inter_Miami_7.9.25-055.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Angel Di Maria",
+      "position": "Forward",
+      "number": 11,
+      "age": 38,
+      "photo": "https://ui-avatars.com/api/?name=Angel%20Di%20Maria&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 3,
+      "name": "Julian Alvarez",
+      "position": "Forward",
+      "number": 9,
+      "age": 26,
+      "photo": "https://ui-avatars.com/api/?name=Julian%20Alvarez&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 4,
+      "name": "Enzo Fernandez",
+      "position": "Midfielder",
+      "number": 8,
+      "age": 25,
+      "photo": "https://ui-avatars.com/api/?name=Enzo%20Fernandez&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 5,
+      "name": "Alexis Mac Allister",
+      "position": "Midfielder",
+      "number": 7,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Alexis_Mac_Allister_04012026_%283%29.jpg/120px-Alexis_Mac_Allister_04012026_%283%29.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Rodrigo De Paul",
+      "position": "Midfielder",
+      "number": 5,
+      "age": 32,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Rodrigo_De_Paul_NYCFC_Miami_24_Sep_2025-018_%28cropped%29.jpg/120px-Rodrigo_De_Paul_NYCFC_Miami_24_Sep_2025-018_%28cropped%29.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Cristian Romero",
+      "position": "Defender",
+      "number": 13,
+      "age": 28,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Cristian_Romero_WC2022.jpg/120px-Cristian_Romero_WC2022.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Nicolas Otamendi",
+      "position": "Defender",
+      "number": 19,
+      "age": 38,
+      "photo": "https://ui-avatars.com/api/?name=Nicolas%20Otamendi&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 9,
+      "name": "Nahuel Molina",
+      "position": "Defender",
+      "number": 4,
+      "age": 28,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Universidad_Cat%C3%B3lica_-_Rosario_Central_20190313_04.jpg/120px-Universidad_Cat%C3%B3lica_-_Rosario_Central_20190313_04.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Emiliano Martinez",
+      "position": "Goalkeeper",
+      "number": 1,
+      "age": 33,
+      "photo": "https://ui-avatars.com/api/?name=Emiliano%20Martinez&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 11,
+      "name": "Leandro Paredes",
+      "position": "Midfielder",
+      "number": 14,
+      "age": 32,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Leandro_Paredes_2018_%28cropped%29.jpg/120px-Leandro_Paredes_2018_%28cropped%29.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Lautaro Martinez",
+      "position": "Forward",
+      "number": 22,
+      "age": 28,
+      "photo": "https://ui-avatars.com/api/?name=Lautaro%20Martinez&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 13,
+      "name": "Gonzalo Montiel",
+      "position": "Defender",
+      "number": 2,
+      "age": 29,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Argentina_national_football_team_-_2_-_2022_%28Gonzalo_Montiel%29_%28cropped%29.jpg/120px-Argentina_national_football_team_-_2_-_2022_%28Gonzalo_Montiel%29_%28cropped%29.jpg"
+    },
+    {
+      "id": 14,
+      "name": "German Pezzella",
+      "position": "Defender",
+      "number": 6,
+      "age": 34,
+      "photo": "https://ui-avatars.com/api/?name=German%20Pezzella&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 15,
+      "name": "Exequiel Palacios",
+      "position": "Midfielder",
+      "number": 16,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Exequiel_Palacios%2C_2022-07-31%2C_Saisoner%C3%B6ffnung_Bayer_04%2C_Leverkusen_%281%29.jpg/120px-Exequiel_Palacios%2C_2022-07-31%2C_Saisoner%C3%B6ffnung_Bayer_04%2C_Leverkusen_%281%29.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Nicolas Gonzalez",
+      "position": "Forward",
+      "number": 15,
+      "age": 28,
+      "photo": "https://ui-avatars.com/api/?name=Nicolas%20Gonzalez&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 17,
+      "name": "Alejandro Garnacho",
+      "position": "Forward",
+      "number": 17,
+      "age": 22,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Alejandro_Garnacho_7_August_2022_%28cropped%29.jpg/120px-Alejandro_Garnacho_7_August_2022_%28cropped%29.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Lisandro Martinez",
+      "position": "Defender",
+      "number": 25,
+      "age": 28,
+      "photo": "https://ui-avatars.com/api/?name=Lisandro%20Martinez&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 19,
+      "name": "Thiago Almada",
+      "position": "Midfielder",
+      "number": 20,
+      "age": 25,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Almada_asse_ol_2425.png/120px-Almada_asse_ol_2425.png"
+    },
+    {
+      "id": 20,
+      "name": "Valentin Carboni",
+      "position": "Forward",
+      "number": 21,
+      "age": 21,
+      "photo": "https://ui-avatars.com/api/?name=Valentin%20Carboni&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 21,
+      "name": "Guido Rodriguez",
+      "position": "Midfielder",
+      "number": 18,
+      "age": 32,
+      "photo": "https://ui-avatars.com/api/?name=Guido%20Rodriguez&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 22,
+      "name": "Juan Foyth",
+      "position": "Defender",
+      "number": 3,
+      "age": 28,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Juan_Foyth_2017.jpg/120px-Juan_Foyth_2017.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Paulo Dybala",
+      "position": "Forward",
+      "number": 12,
+      "age": 32,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/%D0%9C%D0%B0%D1%82%D1%87_%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB_-_%C2%AB%D0%AE%D0%B2%D0%B5%D0%BD%D1%82%D1%83%D1%81%C2%BB_0-2._20_%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8F_2020_%D0%B3%D0%BE%D0%B4%D0%B0_%E2%80%94_1153905_%28cropped%29.jpg/120px-%D0%9C%D0%B0%D1%82%D1%87_%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB_-_%C2%AB%D0%AE%D0%B2%D0%B5%D0%BD%D1%82%D1%83%D1%81%C2%BB_0-2._20_%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8F_2020_%D0%B3%D0%BE%D0%B4%D0%B0_%E2%80%94_1153905_%28cropped%29.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Gerardo Martino",
+      "position": "Coach",
+      "number": null,
+      "age": 63,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gerardo_Martino.jpg/120px-Gerardo_Martino.jpg"
+    }
+  ],
+  "bangladesh": [
+    {
+      "id": 901,
+      "name": "Jamal Bhuyan",
+      "position": "Midfielder",
+      "number": 6,
+      "age": 35,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Jamal_Bhuyan_%28cropped%29.png/120px-Jamal_Bhuyan_%28cropped%29.png"
+    },
+    {
+      "id": 902,
+      "name": "Rakib Hossain",
+      "position": "Forward",
+      "number": 10,
+      "age": 25,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Rakib_Hossain_%28cropped%29.png/120px-Rakib_Hossain_%28cropped%29.png"
+    },
+    {
+      "id": 903,
+      "name": "Topu Barman",
+      "position": "Defender",
+      "number": 4,
+      "age": 30,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Topu_Barman_in_2021.jpg/120px-Topu_Barman_in_2021.jpg"
+    },
+    {
+      "id": 904,
+      "name": "Mamunul Islam",
+      "position": "Midfielder",
+      "number": 8,
+      "age": 37,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Mamunul_Islam_by_RHS.jpg/120px-Mamunul_Islam_by_RHS.jpg"
+    },
+    {
+      "id": 905,
+      "name": "Md. Zahid Hossain",
+      "position": "Goalkeeper",
+      "number": 1,
+      "age": 32
+    },
+    {
+      "id": 906,
+      "name": "Saad Uddin",
+      "position": "Forward",
+      "number": 11,
+      "age": 26
+    },
+    {
+      "id": 907,
+      "name": "Biplu Ahmed",
+      "position": "Midfielder",
+      "number": 7,
+      "age": 25,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Biplu_Ahmed_at_the_2021_SAFF_Championship.png/120px-Biplu_Ahmed_at_the_2021_SAFF_Championship.png"
+    },
+    {
+      "id": 908,
+      "name": "Yeasin Khan",
+      "position": "Defender",
+      "number": 2,
+      "age": 29,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Yeasin_Khan_with_Bangladesh_in_2015.jpg/120px-Yeasin_Khan_with_Bangladesh_in_2015.jpg"
+    },
+    {
+      "id": 909,
+      "name": "Md. Saiful Islam",
+      "position": "Goalkeeper",
+      "number": 13,
+      "age": 28
+    },
+    {
+      "id": 910,
+      "name": "Tariq Kazi",
+      "position": "Defender",
+      "number": 3,
+      "age": 24,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Tariq_Kazi_playing_for_Bangladesh_in_2023.jpg/120px-Tariq_Kazi_playing_for_Bangladesh_in_2023.jpg"
+    },
+    {
+      "id": 911,
+      "name": "Eleta Kingsley",
+      "position": "Forward",
+      "number": 9,
+      "age": 31
+    },
+    {
+      "id": 912,
+      "name": "Sohel Rana",
+      "position": "Goalkeeper",
+      "number": 23,
+      "age": 30
+    },
+    {
+      "id": 913,
+      "name": "Hemanta Vincent Biswas",
+      "position": "Forward",
+      "number": 14,
+      "age": 27
+    },
+    {
+      "id": 914,
+      "name": "Atiqur Rahman Fahad",
+      "position": "Midfielder",
+      "number": 18,
+      "age": 28,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Atiqur_Rahman_Fahad_by_RHS_Photography.jpg/120px-Atiqur_Rahman_Fahad_by_RHS_Photography.jpg"
+    },
+    {
+      "id": 915,
+      "name": "Shahriar Emon",
+      "position": "Midfielder",
+      "number": 20,
+      "age": 24
+    },
+    {
+      "id": 916,
+      "name": "Riyadul Hasan Rafi",
+      "position": "Forward",
+      "number": 17,
+      "age": 23
+    },
+    {
+      "id": 917,
+      "name": "Sushanta Tripura",
+      "position": "Defender",
+      "number": 5,
+      "age": 26
+    },
+    {
+      "id": 918,
+      "name": "Mohammad Al-Amin",
+      "position": "Midfielder",
+      "number": 16,
+      "age": 25
+    }
+  ],
+  "brazil": [
+    {
+      "id": 101,
+      "name": "Neymar Jr",
+      "position": "Forward",
+      "number": 10,
+      "age": 34,
+      "photo": "https://ui-avatars.com/api/?name=Neymar%20Jr&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 102,
+      "name": "Vin�cius Jr",
+      "position": "Forward",
+      "number": 7,
+      "age": 26,
+      "photo": "https://ui-avatars.com/api/?name=Vin%C3%ADcius%20Jr&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 103,
+      "name": "Rodrygo",
+      "position": "Forward",
+      "number": 11,
+      "age": 25,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Rodrygo_2023_%28cropped%29.jpg/120px-Rodrygo_2023_%28cropped%29.jpg"
+    },
+    {
+      "id": 104,
+      "name": "Raphinha",
+      "position": "Forward",
+      "number": 22,
+      "age": 29,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Raphinha_Brazil_V_Morocco_13_June_2026-133_%28cropped%29.jpg/120px-Raphinha_Brazil_V_Morocco_13_June_2026-133_%28cropped%29.jpg"
+    },
+    {
+      "id": 105,
+      "name": "Casemiro",
+      "position": "Midfielder",
+      "number": 5,
+      "age": 34,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Casemiro_Brazil_V_Morocco_13_June_2026-76_%28cropped%29.jpg/120px-Casemiro_Brazil_V_Morocco_13_June_2026-76_%28cropped%29.jpg"
+    },
+    {
+      "id": 106,
+      "name": "Bruno Guimar�es",
+      "position": "Midfielder",
+      "number": 8,
+      "age": 28,
+      "photo": "https://ui-avatars.com/api/?name=Bruno%20Guimar%C3%A3es&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 107,
+      "name": "Lucas Paquet�",
+      "position": "Midfielder",
+      "number": 18,
+      "age": 28,
+      "photo": "https://ui-avatars.com/api/?name=Lucas%20Paquet%C3%A1&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 108,
+      "name": "Marquinhos",
+      "position": "Defender",
+      "number": 4,
+      "age": 32,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marquinhos_Brazil_V_Morocco_13_June_2026-153_%28cropped%29.jpg/120px-Marquinhos_Brazil_V_Morocco_13_June_2026-153_%28cropped%29.jpg"
+    },
+    {
+      "id": 109,
+      "name": "Thiago Silva",
+      "position": "Defender",
+      "number": 3,
+      "age": 41,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Thiago_Silva_850_1582.jpg/120px-20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Thiago_Silva_850_1582.jpg"
+    },
+    {
+      "id": 110,
+      "name": "�der Milit�o",
+      "position": "Defender",
+      "number": 14,
+      "age": 28,
+      "photo": "https://ui-avatars.com/api/?name=%C3%89der%20Milit%C3%A3o&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 111,
+      "name": "Danilo",
+      "position": "Defender",
+      "number": 2,
+      "age": 34,
+      "photo": "https://ui-avatars.com/api/?name=Danilo&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 112,
+      "name": "Alisson",
+      "position": "Goalkeeper",
+      "number": 1,
+      "age": 33,
+      "photo": "https://ui-avatars.com/api/?name=Alisson&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 113,
+      "name": "Ederson",
+      "position": "Goalkeeper",
+      "number": 12,
+      "age": 32,
+      "photo": "https://ui-avatars.com/api/?name=Ederson&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 114,
+      "name": "Joelinton",
+      "position": "Midfielder",
+      "number": 15,
+      "age": 29,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Joelinton_%28cropped%29.jpg/120px-Joelinton_%28cropped%29.jpg"
+    },
+    {
+      "id": 115,
+      "name": "Gabriel Martinelli",
+      "position": "Forward",
+      "number": 21,
+      "age": 25,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gabriel_Martinelli_Brazil_V_Morocco_13_June_2026-144.jpg/120px-Gabriel_Martinelli_Brazil_V_Morocco_13_June_2026-144.jpg"
+    },
+    {
+      "id": 116,
+      "name": "Endrick",
+      "position": "Forward",
+      "number": 9,
+      "age": 20,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Team_Brazil_at_2026_FIFA_World_Cup_by_YantsImages_%28Endrick%29.jpg/120px-Team_Brazil_at_2026_FIFA_World_Cup_by_YantsImages_%28Endrick%29.jpg"
+    }
+  ],
+  "england": [
+    {
+      "id": 201,
+      "name": "Harry Kane",
+      "position": "Forward",
+      "number": 9,
+      "age": 33,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Harry_Kane_9_England_v_Ghana_at_2026_Fifa_World_Cup_by_YantsImages_01_%28cropped%29.jpg/120px-Harry_Kane_9_England_v_Ghana_at_2026_Fifa_World_Cup_by_YantsImages_01_%28cropped%29.jpg"
+    },
+    {
+      "id": 202,
+      "name": "Bukayo Saka",
+      "position": "Forward",
+      "number": 7,
+      "age": 24,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Bukayo_Saka_England_v_Ghana_23_June_2026-057_%28cropped%29.jpg/120px-Bukayo_Saka_England_v_Ghana_23_June_2026-057_%28cropped%29.jpg"
+    },
+    {
+      "id": 203,
+      "name": "Jude Bellingham",
+      "position": "Midfielder",
+      "number": 10,
+      "age": 23,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Jude_Bellingham_England_v_Ghana_23_June_2026-061_%28cropped%29.jpg/120px-Jude_Bellingham_England_v_Ghana_23_June_2026-061_%28cropped%29.jpg"
+    },
+    {
+      "id": 204,
+      "name": "Declan Rice",
+      "position": "Midfielder",
+      "number": 4,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Declan_Rice_England_v_Ghana_23_June_2026-150.jpg/120px-Declan_Rice_England_v_Ghana_23_June_2026-150.jpg"
+    },
+    {
+      "id": 205,
+      "name": "Phil Foden",
+      "position": "Forward",
+      "number": 11,
+      "age": 26,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/2023-10-04_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League%2C_RB_Leipzig_-_Manchester_City_FC_1DX_2613%2C_Phil_Foden.jpg/120px-2023-10-04_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League%2C_RB_Leipzig_-_Manchester_City_FC_1DX_2613%2C_Phil_Foden.jpg"
+    },
+    {
+      "id": 206,
+      "name": "Mason Mount",
+      "position": "Midfielder",
+      "number": 19,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mountbrightonoct3_2019_%28cropped%29.jpg/120px-Mountbrightonoct3_2019_%28cropped%29.jpg"
+    },
+    {
+      "id": 207,
+      "name": "Kyle Walker",
+      "position": "Defender",
+      "number": 2,
+      "age": 36,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Kyle_Walker.jpg/120px-Kyle_Walker.jpg"
+    },
+    {
+      "id": 208,
+      "name": "John Stones",
+      "position": "Defender",
+      "number": 5,
+      "age": 32,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/John_Stones_England_v_Ghana_23_June_2026-038.jpg/120px-John_Stones_England_v_Ghana_23_June_2026-038.jpg"
+    },
+    {
+      "id": 209,
+      "name": "Harry Maguire",
+      "position": "Defender",
+      "number": 6,
+      "age": 33,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Harry_Maguire_2023_%28cropped%29.jpg/120px-Harry_Maguire_2023_%28cropped%29.jpg"
+    },
+    {
+      "id": 210,
+      "name": "Jordan Pickford",
+      "position": "Goalkeeper",
+      "number": 1,
+      "age": 32,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Jordan_Pickford_England_v_Ghana_23_June_2026-049.jpg/120px-Jordan_Pickford_England_v_Ghana_23_June_2026-049.jpg"
+    },
+    {
+      "id": 211,
+      "name": "Jack Grealish",
+      "position": "Forward",
+      "number": 17,
+      "age": 30,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/ManCity20240722-017_%28cropped%29.jpg/120px-ManCity20240722-017_%28cropped%29.jpg"
+    },
+    {
+      "id": 212,
+      "name": "Marcus Rashford",
+      "position": "Forward",
+      "number": 14,
+      "age": 28,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Marcus_Rashford_England_v_Ghana_23_June_2026-036.jpg/120px-Marcus_Rashford_England_v_Ghana_23_June_2026-036.jpg"
+    },
+    {
+      "id": 213,
+      "name": "Trent Alexander-Arnold",
+      "position": "Defender",
+      "number": 8,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Trent_Alexander-Arnold_2018_%28cropped%29.jpg/120px-Trent_Alexander-Arnold_2018_%28cropped%29.jpg"
+    },
+    {
+      "id": 214,
+      "name": "Reece James",
+      "position": "Defender",
+      "number": 3,
+      "age": 26,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Reece_James_England_v_Ghana_23_June_2026-248_%28cropped%29.jpg/120px-Reece_James_England_v_Ghana_23_June_2026-248_%28cropped%29.jpg"
+    },
+    {
+      "id": 215,
+      "name": "Cole Palmer",
+      "position": "Forward",
+      "number": 20,
+      "age": 24,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Cole_Palmer_2025_FIFA_Club_World_Cup_Final.jpg/120px-Cole_Palmer_2025_FIFA_Club_World_Cup_Final.jpg"
+    },
+    {
+      "id": 216,
+      "name": "Kobbie Mainoo",
+      "position": "Midfielder",
+      "number": 21,
+      "age": 21,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kobbie_Mainoo_England_v_Ghana_23_June_2026-042.jpg/120px-Kobbie_Mainoo_England_v_Ghana_23_June_2026-042.jpg"
+    },
+    {
+      "id": 217,
+      "name": "Ollie Watkins",
+      "position": "Forward",
+      "number": 18,
+      "age": 30,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Ollie_Watkins_England_v_Ghana_23_June_2026-035.jpg/120px-Ollie_Watkins_England_v_Ghana_23_June_2026-035.jpg"
+    },
+    {
+      "id": 218,
+      "name": "Aaron Ramsdale",
+      "position": "Goalkeeper",
+      "number": 13,
+      "age": 28,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Aaron_Ramsdale_2026.png/120px-Aaron_Ramsdale_2026.png"
+    }
+  ],
+  "spain": [
+    {
+      "id": 301,
+      "name": "Lamine Yamal",
+      "position": "Forward",
+      "number": 19,
+      "age": 19,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Lamine_Yamal_a_Xina_%282025%29.png/120px-Lamine_Yamal_a_Xina_%282025%29.png"
+    },
+    {
+      "id": 302,
+      "name": "Pedri",
+      "position": "Midfielder",
+      "number": 8,
+      "age": 23,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Pedri.jpg/120px-Pedri.jpg"
+    },
+    {
+      "id": 303,
+      "name": "Gavi",
+      "position": "Midfielder",
+      "number": 6,
+      "age": 21,
+      "photo": "https://ui-avatars.com/api/?name=Gavi&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 304,
+      "name": "Rodri",
+      "position": "Midfielder",
+      "number": 16,
+      "age": 30,
+      "photo": "https://ui-avatars.com/api/?name=Rodri&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 305,
+      "name": "�lvaro Morata",
+      "position": "Forward",
+      "number": 7,
+      "age": 33,
+      "photo": "https://ui-avatars.com/api/?name=%C3%81lvaro%20Morata&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 306,
+      "name": "Dani Carvajal",
+      "position": "Defender",
+      "number": 2,
+      "age": 34,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_Dani_Carvajal_10_%28cropped%29.jpg/120px-UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_Dani_Carvajal_10_%28cropped%29.jpg"
+    },
+    {
+      "id": 307,
+      "name": "Aymeric Laporte",
+      "position": "Defender",
+      "number": 14,
+      "age": 32,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Aymeric_Laporte_2023_%28cropped%29_2.jpg/120px-Aymeric_Laporte_2023_%28cropped%29_2.jpg"
+    },
+    {
+      "id": 308,
+      "name": "Unai Sim�n",
+      "position": "Goalkeeper",
+      "number": 23,
+      "age": 29,
+      "photo": "https://ui-avatars.com/api/?name=Unai%20Sim%C3%B3n&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 309,
+      "name": "Nico Williams",
+      "position": "Forward",
+      "number": 11,
+      "age": 24,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/ATHLETIC-OSASUNA_SEMIFINAL._MAIDER_GOIKOETXEA_%28168%29_%28cropped%29.jpg/120px-ATHLETIC-OSASUNA_SEMIFINAL._MAIDER_GOIKOETXEA_%28168%29_%28cropped%29.jpg"
+    },
+    {
+      "id": 310,
+      "name": "Mikel Oyarzabal",
+      "position": "Forward",
+      "number": 10,
+      "age": 29,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_108_%28cropped%29.jpg/120px-UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_108_%28cropped%29.jpg"
+    },
+    {
+      "id": 311,
+      "name": "Fabi�n Ruiz",
+      "position": "Midfielder",
+      "number": 18,
+      "age": 30,
+      "photo": "https://ui-avatars.com/api/?name=Fabi%C3%A1n%20Ruiz&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 312,
+      "name": "Dani Olmo",
+      "position": "Forward",
+      "number": 20,
+      "age": 28,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dani_Olmo_2022.jpg/120px-Dani_Olmo_2022.jpg"
+    },
+    {
+      "id": 313,
+      "name": "Pau Torres",
+      "position": "Defender",
+      "number": 4,
+      "age": 29,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Pau_Torres_April_2026_%28cropped%29.jpg/120px-Pau_Torres_April_2026_%28cropped%29.jpg"
+    },
+    {
+      "id": 314,
+      "name": "David Raya",
+      "position": "Goalkeeper",
+      "number": 1,
+      "age": 30,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/David_Raya_in_2025_%28cropped%29.jpg/120px-David_Raya_in_2025_%28cropped%29.jpg"
+    }
+  ],
+  "france": [
+    {
+      "id": 401,
+      "name": "Kylian Mbapp�",
+      "position": "Forward",
+      "number": 10,
+      "age": 27,
+      "photo": "https://ui-avatars.com/api/?name=Kylian%20Mbapp%C3%A9&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 402,
+      "name": "Antoine Griezmann",
+      "position": "Forward",
+      "number": 7,
+      "age": 35,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/FRA-ARG_%2810%29_%28cropped%29.jpg/120px-FRA-ARG_%2810%29_%28cropped%29.jpg"
+    },
+    {
+      "id": 403,
+      "name": "Eduardo Camavinga",
+      "position": "Midfielder",
+      "number": 8,
+      "age": 23,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ofrenda_de_la_Liga_y_la_Champions-13-L.Mill%C3%A1n_%2852109790215%29_%28cropped%29.jpg/120px-Ofrenda_de_la_Liga_y_la_Champions-13-L.Mill%C3%A1n_%2852109790215%29_%28cropped%29.jpg"
+    },
+    {
+      "id": 404,
+      "name": "Aur�lien Tchouam�ni",
+      "position": "Midfielder",
+      "number": 14,
+      "age": 26,
+      "photo": "https://ui-avatars.com/api/?name=Aur%C3%A9lien%20Tchouam%C3%A9ni&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 405,
+      "name": "Dayot Upamecano",
+      "position": "Defender",
+      "number": 4,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dayot_Upamecano_France_v_Senegal_16_June_2026-402_%28cropped%29.jpg/120px-Dayot_Upamecano_France_v_Senegal_16_June_2026-402_%28cropped%29.jpg"
+    },
+    {
+      "id": 406,
+      "name": "Theo Hern�ndez",
+      "position": "Defender",
+      "number": 22,
+      "age": 28,
+      "photo": "https://ui-avatars.com/api/?name=Theo%20Hern%C3%A1ndez&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 407,
+      "name": "Mike Maignan",
+      "position": "Goalkeeper",
+      "number": 16,
+      "age": 31,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Mike_Maignan_France_v_Senegal_16_June_2026-211.jpg/120px-Mike_Maignan_France_v_Senegal_16_June_2026-211.jpg"
+    },
+    {
+      "id": 408,
+      "name": "Ousmane Demb�l�",
+      "position": "Forward",
+      "number": 11,
+      "age": 29,
+      "photo": "https://ui-avatars.com/api/?name=Ousmane%20Demb%C3%A9l%C3%A9&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 409,
+      "name": "Randal Kolo Muani",
+      "position": "Forward",
+      "number": 9,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Randal_Kolo_Muani_2020.jpg/120px-Randal_Kolo_Muani_2020.jpg"
+    },
+    {
+      "id": 410,
+      "name": "Marcus Thuram",
+      "position": "Forward",
+      "number": 15,
+      "age": 28,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Marcus_Thuram_France_v_Senegal_16_June_2026-261_%28cropped%29.jpg/120px-Marcus_Thuram_France_v_Senegal_16_June_2026-261_%28cropped%29.jpg"
+    },
+    {
+      "id": 411,
+      "name": "Youssouf Fofana",
+      "position": "Midfielder",
+      "number": 19,
+      "age": 27,
+      "photo": "https://ui-avatars.com/api/?name=Youssouf%20Fofana&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 412,
+      "name": "William Saliba",
+      "position": "Defender",
+      "number": 2,
+      "age": 25,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/William_Saliba_France_v_Senegal_16_June_2026-336_%28cropped%29.jpg/120px-William_Saliba_France_v_Senegal_16_June_2026-336_%28cropped%29.jpg"
+    }
+  ],
+  "germany": [
+    {
+      "id": 501,
+      "name": "Jamal Musiala",
+      "position": "Midfielder",
+      "number": 10,
+      "age": 23,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Jamal_Musiala_10%2C_Pedro_Vite_15_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_02_%28cropped%29.jpg/120px-Jamal_Musiala_10%2C_Pedro_Vite_15_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_02_%28cropped%29.jpg"
+    },
+    {
+      "id": 502,
+      "name": "Florian Wirtz",
+      "position": "Midfielder",
+      "number": 7,
+      "age": 22,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Team_Germany_players%2C_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_01_Florian_Wirtz.jpg/120px-Team_Germany_players%2C_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_01_Florian_Wirtz.jpg"
+    },
+    {
+      "id": 503,
+      "name": "Ilkay G�ndogan",
+      "position": "Midfielder",
+      "number": 8,
+      "age": 35,
+      "photo": "https://ui-avatars.com/api/?name=%C4%B0lkay%20G%C3%BCndo%C4%9Fan&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 504,
+      "name": "Joshua Kimmich",
+      "position": "Midfielder",
+      "number": 6,
+      "age": 31,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Team_Germany_players%2C_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_01_Joshua_Kimmich.jpg/120px-Team_Germany_players%2C_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_01_Joshua_Kimmich.jpg"
+    },
+    {
+      "id": 505,
+      "name": "Antonio R�diger",
+      "position": "Defender",
+      "number": 2,
+      "age": 33,
+      "photo": "https://ui-avatars.com/api/?name=Antonio%20R%C3%BCdiger&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 506,
+      "name": "Niclas F�llkrug",
+      "position": "Forward",
+      "number": 9,
+      "age": 33,
+      "photo": "https://ui-avatars.com/api/?name=Niclas%20F%C3%BCllkrug&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 507,
+      "name": "Kai Havertz",
+      "position": "Forward",
+      "number": 11,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Team_Germany%2C_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_04_Kai_Havertz.jpg/120px-Team_Germany%2C_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_04_Kai_Havertz.jpg"
+    },
+    {
+      "id": 508,
+      "name": "Leroy San�",
+      "position": "Forward",
+      "number": 19,
+      "age": 30,
+      "photo": "https://ui-avatars.com/api/?name=Leroy%20San%C3%A9&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 509,
+      "name": "Manuel Neuer",
+      "position": "Goalkeeper",
+      "number": 1,
+      "age": 40,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Manuel_Neuer_1_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_05_%28cropped%29.jpg/120px-Manuel_Neuer_1_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_05_%28cropped%29.jpg"
+    },
+    {
+      "id": 510,
+      "name": "Jonathan Tah",
+      "position": "Defender",
+      "number": 4,
+      "age": 30,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Jonathan_Tah_4_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_01_%28cropped%29.jpg/120px-Jonathan_Tah_4_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_01_%28cropped%29.jpg"
+    },
+    {
+      "id": 511,
+      "name": "David Raum",
+      "position": "Defender",
+      "number": 3,
+      "age": 28,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/David_Raum_22_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_01_%28cropped%29.jpg/120px-David_Raum_22_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_01_%28cropped%29.jpg"
+    },
+    {
+      "id": 512,
+      "name": "Marc-Andr� ter Stegen",
+      "position": "Goalkeeper",
+      "number": 12,
+      "age": 34,
+      "photo": "https://ui-avatars.com/api/?name=Marc-Andr%C3%A9%20ter%20Stegen&background=667eea&color=fff&size=80&bold=true"
+    }
+  ],
+  "italy": [
+    {
+      "id": 601,
+      "name": "Gianluigi Donnarumma",
+      "position": "Goalkeeper",
+      "number": 1,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Norway_Italy_-_June_2025_A_17_%28Gianluigi_Donnarumma%29.jpg/120px-Norway_Italy_-_June_2025_A_17_%28Gianluigi_Donnarumma%29.jpg"
+    },
+    {
+      "id": 602,
+      "name": "Nicol� Barella",
+      "position": "Midfielder",
+      "number": 18,
+      "age": 29,
+      "photo": "https://ui-avatars.com/api/?name=Nicol%C3%B2%20Barella&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 603,
+      "name": "Federico Chiesa",
+      "position": "Forward",
+      "number": 14,
+      "age": 28,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Federico_Chiesa_vs_Zenit_2021-10-20_%28cropped2%29.jpg/120px-Federico_Chiesa_vs_Zenit_2021-10-20_%28cropped2%29.jpg"
+    },
+    {
+      "id": 604,
+      "name": "Lorenzo Insigne",
+      "position": "Forward",
+      "number": 10,
+      "age": 35,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Lorenzo_Insigne_2021.jpg/120px-Lorenzo_Insigne_2021.jpg"
+    },
+    {
+      "id": 605,
+      "name": "Leonardo Bonucci",
+      "position": "Defender",
+      "number": 19,
+      "age": 39,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/20150616_-_Portugal_-_Italie_-_Gen%C3%A8ve_-_Leonardo_Bonucci_%28cropped_2%29.jpg/120px-20150616_-_Portugal_-_Italie_-_Gen%C3%A8ve_-_Leonardo_Bonucci_%28cropped_2%29.jpg"
+    },
+    {
+      "id": 606,
+      "name": "Alessandro Bastoni",
+      "position": "Defender",
+      "number": 15,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Norway_Italy_-_June_2025_A_36_%28cropped%29.jpg/120px-Norway_Italy_-_June_2025_A_36_%28cropped%29.jpg"
+    },
+    {
+      "id": 607,
+      "name": "Jorginho",
+      "position": "Midfielder",
+      "number": 8,
+      "age": 34,
+      "photo": "https://ui-avatars.com/api/?name=Jorginho&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 608,
+      "name": "Marco Verratti",
+      "position": "Midfielder",
+      "number": 6,
+      "age": 33,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Verratti-2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93126.jpg/120px-Verratti-2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93126.jpg"
+    },
+    {
+      "id": 609,
+      "name": "Ciro Immobile",
+      "position": "Forward",
+      "number": 17,
+      "age": 36,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Ciro_Immobile_20240803_%28cropped%29.jpg/120px-Ciro_Immobile_20240803_%28cropped%29.jpg"
+    },
+    {
+      "id": 610,
+      "name": "Sandro Tonali",
+      "position": "Midfielder",
+      "number": 16,
+      "age": 26,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Norway_Italy_-_June_2025_B_03.jpg/120px-Norway_Italy_-_June_2025_B_03.jpg"
+    },
+    {
+      "id": 611,
+      "name": "Giovanni Di Lorenzo",
+      "position": "Defender",
+      "number": 2,
+      "age": 32,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Norway_Italy_-_June_2025_A_20_-_Giovanni_Di_Lorenzo.jpg/120px-Norway_Italy_-_June_2025_A_20_-_Giovanni_Di_Lorenzo.jpg"
+    },
+    {
+      "id": 612,
+      "name": "Alex Meret",
+      "position": "Goalkeeper",
+      "number": 21,
+      "age": 29,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Alex_Meret_%28cropped%29.jpg/120px-Alex_Meret_%28cropped%29.jpg"
+    }
+  ],
+  "portugal": [
+    {
+      "id": 701,
+      "name": "Cristiano Ronaldo",
+      "position": "Forward",
+      "number": 7,
+      "age": 41,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Cristiano_Ronaldo_2275_%28cropped%29.jpg/120px-Cristiano_Ronaldo_2275_%28cropped%29.jpg"
+    },
+    {
+      "id": 702,
+      "name": "Bruno Fernandes",
+      "position": "Midfielder",
+      "number": 8,
+      "age": 31,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Bruno_Fernandes_USMNT_v_Portugal_Mar_31_2026-27_%28cropped%29.jpg/120px-Bruno_Fernandes_USMNT_v_Portugal_Mar_31_2026-27_%28cropped%29.jpg"
+    },
+    {
+      "id": 703,
+      "name": "Bernardo Silva",
+      "position": "Midfielder",
+      "number": 10,
+      "age": 31,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Bernardo_Silva_%28Isto_%C3%89_Gozar_Com_Quem_Trabalha%2C_2024%29.png/120px-Bernardo_Silva_%28Isto_%C3%89_Gozar_Com_Quem_Trabalha%2C_2024%29.png"
+    },
+    {
+      "id": 704,
+      "name": "R�ben Dias",
+      "position": "Defender",
+      "number": 4,
+      "age": 29,
+      "photo": "https://ui-avatars.com/api/?name=R%C3%BAben%20Dias&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 705,
+      "name": "Jo�o Cancelo",
+      "position": "Defender",
+      "number": 20,
+      "age": 32,
+      "photo": "https://ui-avatars.com/api/?name=Jo%C3%A3o%20Cancelo&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 706,
+      "name": "Diogo Jota",
+      "position": "Forward",
+      "number": 21,
+      "age": 29,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Diogo_Jota_2025_Cropped.jpg/120px-Diogo_Jota_2025_Cropped.jpg"
+    },
+    {
+      "id": 707,
+      "name": "Rafael Le�o",
+      "position": "Forward",
+      "number": 17,
+      "age": 27,
+      "photo": "https://ui-avatars.com/api/?name=Rafael%20Le%C3%A3o&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 708,
+      "name": "Vitinha",
+      "position": "Midfielder",
+      "number": 15,
+      "age": 26,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Vitinha_USMNT_v_Portugal_Mar_31_2026-50_%28cropped%29.jpg/120px-Vitinha_USMNT_v_Portugal_Mar_31_2026-50_%28cropped%29.jpg"
+    },
+    {
+      "id": 709,
+      "name": "Diogo Costa",
+      "position": "Goalkeeper",
+      "number": 22,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Portugal_national_football_team_0866_%28Diogo_Costa%29.jpg/120px-Portugal_national_football_team_0866_%28Diogo_Costa%29.jpg"
+    },
+    {
+      "id": 710,
+      "name": "Gon�alo Ramos",
+      "position": "Forward",
+      "number": 11,
+      "age": 25,
+      "photo": "https://ui-avatars.com/api/?name=Gon%C3%A7alo%20Ramos&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 711,
+      "name": "Jo�o Palhinha",
+      "position": "Midfielder",
+      "number": 6,
+      "age": 30,
+      "photo": "https://ui-avatars.com/api/?name=Jo%C3%A3o%20Palhinha&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 712,
+      "name": "Nuno Mendes",
+      "position": "Defender",
+      "number": 3,
+      "age": 24,
+      "photo": "https://ui-avatars.com/api/?name=Nuno%20Mendes&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 713,
+      "name": "Pepe",
+      "position": "Defender",
+      "number": 5,
+      "age": 43,
+      "photo": "https://ui-avatars.com/api/?name=Pepe&background=667eea&color=fff&size=80&bold=true"
+    }
+  ],
+  "netherlands": [
+    {
+      "id": 801,
+      "name": "Virgil van Dijk",
+      "position": "Defender",
+      "number": 4,
+      "age": 34,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/20160604_AUT_NED_8876_%28cropped%29.jpg/120px-20160604_AUT_NED_8876_%28cropped%29.jpg"
+    },
+    {
+      "id": 802,
+      "name": "Frenkie de Jong",
+      "position": "Midfielder",
+      "number": 21,
+      "age": 29,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/%D0%9C%D0%B0%D1%82%D1%87_%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB_-_%C2%AB%D0%91%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D0%BE%D0%BD%D0%B0%C2%BB_0-1._2_%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8F_2021_%D0%B3%D0%BE%D0%B4%D0%B0._II_%E2%80%94_1289671_%28cropped%29.jpg/120px-%D0%9C%D0%B0%D1%82%D1%87_%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB_-_%C2%AB%D0%91%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D0%BE%D0%BD%D0%B0%C2%BB_0-1._2_%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8F_2021_%D0%B3%D0%BE%D0%B4%D0%B0._II_%E2%80%94_1289671_%28cropped%29.jpg"
+    },
+    {
+      "id": 803,
+      "name": "Memphis Depay",
+      "position": "Forward",
+      "number": 10,
+      "age": 32,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Memphis_Depay_2019.jpg/120px-Memphis_Depay_2019.jpg"
+    },
+    {
+      "id": 804,
+      "name": "Cody Gakpo",
+      "position": "Forward",
+      "number": 8,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Cody_Gakpo_06042025_%282%29_%28cropped%29.jpg/120px-Cody_Gakpo_06042025_%282%29_%28cropped%29.jpg"
+    },
+    {
+      "id": 805,
+      "name": "Matthijs de Ligt",
+      "position": "Defender",
+      "number": 3,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/2022-07-30_Fu%C3%9Fball%2C_M%C3%A4nner%2C_DFL-Supercup%2C_RB_Leipzig_-_FC_Bayern_M%C3%BCnchen_Matthijs_de_Ligt_%28cropped%29.jpg/120px-2022-07-30_Fu%C3%9Fball%2C_M%C3%A4nner%2C_DFL-Supercup%2C_RB_Leipzig_-_FC_Bayern_M%C3%BCnchen_Matthijs_de_Ligt_%28cropped%29.jpg"
+    },
+    {
+      "id": 806,
+      "name": "Denzel Dumfries",
+      "position": "Defender",
+      "number": 22,
+      "age": 30,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Edison_ndreca_inter_egnati_%28cropped_Denzel_Dumfries%29.jpg/120px-Edison_ndreca_inter_egnati_%28cropped_Denzel_Dumfries%29.jpg"
+    },
+    {
+      "id": 807,
+      "name": "Xavi Simons",
+      "position": "Midfielder",
+      "number": 7,
+      "age": 23,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/2023-10-04_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League%2C_RB_Leipzig_-_Manchester_City_FC_1DX_2672_%28Xavi_Simons%29.jpg/120px-2023-10-04_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League%2C_RB_Leipzig_-_Manchester_City_FC_1DX_2672_%28Xavi_Simons%29.jpg"
+    },
+    {
+      "id": 808,
+      "name": "Tijjani Reijnders",
+      "position": "Midfielder",
+      "number": 14,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Reijnders_arriva_in_albergo_%28cropped%29.jpg/120px-Reijnders_arriva_in_albergo_%28cropped%29.jpg"
+    },
+    {
+      "id": 809,
+      "name": "Wout Weghorst",
+      "position": "Forward",
+      "number": 9,
+      "age": 33,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Qaraba%C4%9F_vs_Ajax_%2824.10.2024%29_%284%29_%28Wout_Weghorst%29.jpg/120px-Qaraba%C4%9F_vs_Ajax_%2824.10.2024%29_%284%29_%28Wout_Weghorst%29.jpg"
+    },
+    {
+      "id": 810,
+      "name": "Nathan Ak�",
+      "position": "Defender",
+      "number": 5,
+      "age": 31,
+      "photo": "https://ui-avatars.com/api/?name=Nathan%20Ak%C3%A9&background=667eea&color=fff&size=80&bold=true"
+    }
+  ],
+  "_fallback": [
+    {
+      "id": 1001,
+      "name": "Mohamed Salah",
+      "position": "Forward",
+      "number": 11,
+      "age": 34,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mohamed_Salah_2018.jpg/120px-Mohamed_Salah_2018.jpg"
+    },
+    {
+      "id": 1002,
+      "name": "Kevin De Bruyne",
+      "position": "Midfielder",
+      "number": 17,
+      "age": 35,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Kevin_De_Bruyne_USMNT_v_Belgium_Mar_28_2026-64_%28cropped%29.jpg/120px-Kevin_De_Bruyne_USMNT_v_Belgium_Mar_28_2026-64_%28cropped%29.jpg"
+    },
+    {
+      "id": 1003,
+      "name": "Erling Haaland",
+      "position": "Forward",
+      "number": 9,
+      "age": 26,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Erling_Haaland_Morocco_v_Norway_7_June_2026-51.jpg/120px-Erling_Haaland_Morocco_v_Norway_7_June_2026-51.jpg"
+    },
+    {
+      "id": 1004,
+      "name": "Robert Lewandowski",
+      "position": "Forward",
+      "number": 9,
+      "age": 37,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/2019147183134_2019-05-27_Fussball_1.FC_Kaiserslautern_vs_FC_Bayern_M%C3%BCnchen_-_Sven_-_1D_X_MK_II_-_0228_-_B70I8527_%28cropped%29.jpg/120px-2019147183134_2019-05-27_Fussball_1.FC_Kaiserslautern_vs_FC_Bayern_M%C3%BCnchen_-_Sven_-_1D_X_MK_II_-_0228_-_B70I8527_%28cropped%29.jpg"
+    },
+    {
+      "id": 1005,
+      "name": "Luka Modric",
+      "position": "Midfielder",
+      "number": 10,
+      "age": 40,
+      "photo": "https://ui-avatars.com/api/?name=Luka%20Modri%C4%87&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 1006,
+      "name": "Vinicius Tobias",
+      "position": "Defender",
+      "number": 2,
+      "age": 22,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Vinicius_Tobias.jpg/120px-Vinicius_Tobias.jpg"
+    },
+    {
+      "id": 1007,
+      "name": "Giorgi Mamardashvili",
+      "position": "Goalkeeper",
+      "number": 1,
+      "age": 25,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Liverpool_Players_04012026_%285%29_-_Mamardashvili.jpg/120px-Liverpool_Players_04012026_%285%29_-_Mamardashvili.jpg"
+    },
+    {
+      "id": 1008,
+      "name": "Khvicha Kvaratskhelia",
+      "position": "Forward",
+      "number": 7,
+      "age": 25,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Kvaratskhelia_asse_psg_2425.png/120px-Kvaratskhelia_asse_psg_2425.png"
+    },
+    {
+      "id": 1009,
+      "name": "Victor Osimhen",
+      "position": "Forward",
+      "number": 9,
+      "age": 27,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Victor-osimhen-nigeria-2024-3-4.jpg/120px-Victor-osimhen-nigeria-2024-3-4.jpg"
+    },
+    {
+      "id": 1010,
+      "name": "Martin �degaard",
+      "position": "Midfielder",
+      "number": 8,
+      "age": 27,
+      "photo": "https://ui-avatars.com/api/?name=Martin%20%C3%98degaard&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 1011,
+      "name": "Serge Gnabry",
+      "position": "Forward",
+      "number": 7,
+      "age": 31,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Serge_Gnabry_WC2022.jpg/120px-Serge_Gnabry_WC2022.jpg"
+    },
+    {
+      "id": 1012,
+      "name": "Romain Sa�ss",
+      "position": "Defender",
+      "number": 6,
+      "age": 36,
+      "photo": "https://ui-avatars.com/api/?name=Romain%20Sa%C3%AFss&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 1013,
+      "name": "Hakim Ziyech",
+      "position": "Forward",
+      "number": 22,
+      "age": 33,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Hakim_Ziyech_2021.jpg/120px-Hakim_Ziyech_2021.jpg"
+    },
+    {
+      "id": 1014,
+      "name": "Edson �lvarez",
+      "position": "Defender",
+      "number": 4,
+      "age": 28,
+      "photo": "https://ui-avatars.com/api/?name=Edson%20%C3%81lvarez&background=667eea&color=fff&size=80&bold=true"
+    },
+    {
+      "id": 1015,
+      "name": "Alphonso Davies",
+      "position": "Defender",
+      "number": 19,
+      "age": 25,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Alphonso_Davies_Canada_v_Qatar_18_June_2026-007_%28cropped%29.jpg/120px-Alphonso_Davies_Canada_v_Qatar_18_June_2026-007_%28cropped%29.jpg"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+.food-card {
+    margin-bottom: 20px;
+    background-color: #626262;
+    padding: 12px;
+    border-radius: 12px;
+
+    img{
+        height:240px;
+        border-radius: 12px;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+        color: #ffffff;
+        margin-bottom: 16px;
+    }
+}

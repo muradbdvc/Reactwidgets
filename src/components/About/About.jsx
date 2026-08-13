@@ -1,38 +1,42 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './About.css';
 
+const COUNTRIES = [
+  { name: 'Argentina', code: 'AR' },   { name: 'Australia', code: 'AU' }, { name: 'Bangladesh', code: 'BD' },
+  { name: 'Austria', code: 'AT' }, { name: 'Belgium', code: 'BE' },
+  { name: 'Brazil', code: 'BR' }, { name: 'Cameroon', code: 'CM' },
+  { name: 'Canada', code: 'CA' }, { name: 'Chile', code: 'CL' },
+  { name: 'China', code: 'CN' }, { name: 'Colombia', code: 'CO' },
+  { name: 'Croatia', code: 'HR' }, { name: 'Czech Republic', code: 'CZ' },
+  { name: 'Denmark', code: 'DK' }, { name: 'Ecuador', code: 'EC' },
+  { name: 'Egypt', code: 'EG' }, { name: 'England', code: 'ENG' },
+  { name: 'France', code: 'FR' }, { name: 'Germany', code: 'DE' },
+  { name: 'Ghana', code: 'GH' }, { name: 'Greece', code: 'GR' },
+  { name: 'Hungary', code: 'HU' }, { name: 'Iceland', code: 'IS' },
+  { name: 'India', code: 'IN' }, { name: 'Iran', code: 'IR' },
+  { name: 'Italy', code: 'IT' }, { name: 'Ivory Coast', code: 'CI' },
+  { name: 'Jamaica', code: 'JM' }, { name: 'Japan', code: 'JP' },
+  { name: 'Mexico', code: 'MX' }, { name: 'Morocco', code: 'MA' },
+  { name: 'Netherlands', code: 'NL' }, { name: 'Nigeria', code: 'NG' },
+  { name: 'Norway', code: 'NO' }, { name: 'Paraguay', code: 'PY' },
+  { name: 'Peru', code: 'PE' }, { name: 'Poland', code: 'PL' },
+  { name: 'Portugal', code: 'PT' }, { name: 'Romania', code: 'RO' },
+  { name: 'Russia', code: 'RU' }, { name: 'Saudi Arabia', code: 'SA' },
+  { name: 'Scotland', code: 'SCO' }, { name: 'Senegal', code: 'SN' },
+  { name: 'Serbia', code: 'RS' }, { name: 'South Korea', code: 'KR' },
+  { name: 'Spain', code: 'ES' }, { name: 'Sweden', code: 'SE' },
+  { name: 'Switzerland', code: 'CH' }, { name: 'Turkey', code: 'TR' },
+  { name: 'Ukraine', code: 'UA' }, { name: 'United States', code: 'US' },
+  { name: 'Uruguay', code: 'UY' }, { name: 'Wales', code: 'WAL' },
+];
+
 export default function About() {
-  const [teams, setTeams] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [search, setSearch] = useState('');
   const perPage = 20;
 
-  const fetchCountries = async () => {
-    setIsLoading(true);
-    setError(null);
-    try {
-      const res = await fetch('https://restcountries.com/v3.1/all?fields=name,cca2');
-      if (!res.ok) throw Error('Failed to fetch countries');
-      const data = await res.json();
-      const mapped = data
-        .filter((c) => c.name?.common)
-        .map((c) => ({ name: c.name.common, code: c.cca2 }))
-        .sort((a, b) => a.name.localeCompare(b.name));
-      setTeams(mapped);
-    } catch (err) {
-      setError(err.message);
-    }
-    setIsLoading(false);
-  };
-
-  useEffect(() => {
-    fetchCountries();
-  }, []);
-
-  const filtered = teams.filter((t) =>
+  const filtered = COUNTRIES.filter((t) =>
     t.name.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -98,12 +102,15 @@ export default function About() {
           value={search}
           onChange={(e) => { setSearch(e.target.value); setCurrentPage(1); }}
         />
-        {error && <p className="error-msg">{error}</p>}
-        {isLoading && <p className="loading-msg">Loading countries...</p>}
         <div className="team-grid">
           {paginatedTeams.map((item, i) => (
             <Link to={`/about/country/${encodeURIComponent(item.name)}`} className="team-card" key={item.code || i}>
-              <div className="team-avatar">{(item.name || '?').charAt(0)}</div>
+              <img
+                className="flag-img"
+                src={`https://flagcdn.com/w80/${item.code === 'ENG' ? 'gb-eng' : item.code === 'SCO' ? 'gb-sct' : item.code === 'WAL' ? 'gb-wls' : item.code.toLowerCase()}.png`}
+                alt={item.name}
+                loading="lazy"
+              />
               <h3>{item.name}</h3>
               <span className="team-role">{item.code || ''}</span>
             </Link>

@@ -1,74 +1,136 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import playersData from '../../data/players.json';
 import './About.css';
+
+const API_KEY = "4fe9e0ce8cd2912c85a042d463687969";
 
 export default function CountryDetail() {
   const { name } = useParams();
-  const [query, setQuery] = useState('');
-  const [players, setPlayers] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [allPlayers, setAllPlayers] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [searched, setSearched] = useState(false);
+  const [page, setPage] = useState(1);
+  const [search, setSearch] = useState('');
+  const [usedMock, setUsedMock] = useState(false);
+  const perPage = 20;
 
-  const searchPlayers = async () => {
-    const term = query.trim();
-    if (!term) return;
+  const decoded = decodeURIComponent(name);
+
+  useEffect(() => {
+    setAllPlayers([]);
+    setPage(1);
+    setSearch('');
     setIsLoading(true);
     setError(null);
-    setSearched(true);
-    try {
-      const res = await fetch(`https://www.fotmob.com/api/searchData?term=${encodeURIComponent(term)}`);
+    setUsedMock(false);
+
+    const myHeaders = new Headers();
+    myHeaders.append("x-apisports-key", API_KEY);
+    const opts = { method: 'GET', headers: myHeaders, redirect: 'follow' };
+
+    const fetchSquad = async (teamId) => {
+      const res = await fetch(`https://v3.football.api-sports.io/players/squads?team=${teamId}`, opts);
       if (!res.ok) throw Error(`HTTP ${res.status}`);
       const data = await res.json();
-      const found = data?.players || [];
-      setPlayers(found);
-      if (!found.length) setError('No players found.');
-    } catch (err) {
-      setError(err.message);
-      setPlayers([]);
-    }
-    setIsLoading(false);
-  };
+      return data?.response?.[0]?.players || [];
+    };
 
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter') searchPlayers();
-  };
+    (async () => {
+      try {
+        const res = await fetch(`https://v3.football.api-sports.io/teams?country=${decoded}`, opts);
+        if (!res.ok) throw Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        if (!data?.response?.length) throw Error('No teams found');
+        const teams = data.response.slice(0, 10);
+        const squadPromises = teams.map((t) => fetchSquad(t.team.id));
+        const squads = await Promise.all(squadPromises);
+        const merged = squads.flat();
+        const seen = new Set();
+        const unique = merged.filter((p) => {
+          if (seen.has(p.id)) return false;
+          seen.add(p.id);
+          return true;
+        });
+        if (unique.length) setAllPlayers(unique);
+        else throw Error('No players');
+      } catch (err) {
+        const key = decoded.toLowerCase();
+        const mock = playersData[key] || playersData._fallback;
+        setAllPlayers(mock);
+        setUsedMock(true);
+        setError(null);
+      }
+      setIsLoading(false);
+    })();
+  }, [decoded]);
+
+  const filtered = allPlayers.filter((p) =>
+    p.name?.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const totalPages = Math.ceil(filtered.length / perPage);
+  const paginatedPlayers = filtered.slice((page - 1) * perPage, page * perPage);
 
   return (
     <div className="about-page">
       <Link to="/about" className="back-link">← Back to Countries</Link>
-      <h2 className="detail-title">{decodeURIComponent(name)}</h2>
-      <p className="team-subtitle">Search for football players by name.</p>
+      <h2 className="detail-title">{decoded}</h2>
+      <p className="team-subtitle">
+        {allPlayers.length > 0
+          ? `${allPlayers.length} players found. ${usedMock ? '(demo data)' : ''}`
+          : 'Loading...'}
+        {usedMock && <span className="mock-note"> — Use the search to filter by name.</span>}
+        {!usedMock && allPlayers.length > 0 && <span> Use the search to filter by name.</span>}
+      </p>
 
-      <div className="player-search-bar">
+      {allPlayers.length > 0 && (
         <input
           type="text"
           className="search-input"
-          placeholder="Search player (e.g. Messi, Ronaldo)..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          onKeyDown={handleKeyDown}
+          placeholder="Filter players by name..."
+          value={search}
+          onChange={(e) => { setSearch(e.target.value); setPage(1); }}
         />
-        <button className="player-search-btn" onClick={searchPlayers} disabled={isLoading || !query.trim()}>
-          {isLoading ? '...' : 'Search'}
-        </button>
-      </div>
+      )}
 
-      {error && <p className="error-msg">{error}</p>}
+      {error && !usedMock && <p className="error-msg">{error}</p>}
+      {isLoading && <p className="loading-msg">Loading players...</p>}
 
       <div className="team-grid">
-        {players.map((p) => (
-          <div className="team-card" key={p.id}>
-            {p.photo && <img src={`https://images.fotmob.com/image_resources/playerimages/${p.id}.png`} alt="" className="team-logo" onError={(e) => { e.target.style.display = 'none'; }} />}
-            <h3>{p.name}</h3>
-            <span className="team-role">{p.role || p.position || ''}</span>
-            {p.team && <p>{p.team}</p>}
-          </div>
+        {paginatedPlayers.map((item) => (
+          <Link
+            key={item.id}
+            to={`/about/country/${encodeURIComponent(decoded)}/player/${item.id}`}
+            state={{ player: item }}
+            className="team-card"
+          >
+            <img
+              src={item.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(item.name)}&background=667eea&color=fff&size=80&bold=true`}
+              alt={item.name}
+              className="team-img"
+              onError={(e) => { if (!e.target.src.includes('ui-avatars')) e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(item.name)}&background=667eea&color=fff&size=80&bold=true`; }}
+            />
+            <h3>{item.name || 'Unknown'}</h3>
+            <span className="team-role">{item.position || ''}</span>
+            {item.number != null && <p>#{item.number} · Age {item.age || '-'}</p>}
+            {item.number == null && <p>Age {item.age || '-'}</p>}
+          </Link>
         ))}
-        {searched && !isLoading && !error && players.length === 0 && (
-          <p className="error-msg" style={{ gridColumn: '1 / -1' }}>No players found. Try a different search.</p>
+        {!isLoading && !error && filtered.length === 0 && (
+          <p className="error-msg" style={{ gridColumn: '1 / -1' }}>
+            {allPlayers.length > 0 ? 'No players match your search.' : 'No players found.'}
+          </p>
         )}
       </div>
+
+      {totalPages > 1 && (
+        <div className="pagination">
+          <button disabled={page === 1} onClick={() => setPage(page - 1)}>Prev</button>
+          <span>{page} / {totalPages} ({filtered.length} players)</span>
+          <button disabled={page === totalPages} onClick={() => setPage(page + 1)}>Next</button>
+        </div>
+      )}
     </div>
   );
 }

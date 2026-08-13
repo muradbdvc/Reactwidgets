@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Margherita Pizza",
+    "date": "2026-08-01",
+    "category": "Pizza",
+    "image": "https://picsum.photos/seed/pizza1/800/600",
+    "content": "Learn how to make authentic Italian Margherita pizza with fresh mozzarella, basil, tomato sauce, and crispy homemade dough.",
+    "readTime": "5 min read"
+  },
+  {
+    "id": 2,
+    "title": "Creamy Chicken Alfredo Pasta",
+    "date": "2026-08-02",
+    "category": "Pasta",
+    "image": "https://picsum.photos/seed/pasta1/800/600",
+    "content": "A rich and creamy Alfredo pasta recipe made with grilled chicken, parmesan cheese, garlic, and butter.",
+    "readTime": "6 min read"
+  },
+  {
+    "id": 3,
+    "title": "Healthy Avocado Toast",
+    "date": "2026-08-03",
+    "category": "Breakfast",
+    "image": "https://picsum.photos/seed/avocado1/800/600",
+    "content": "This avocado toast is loaded with healthy fats, cherry tomatoes, herbs, and perfectly toasted bread.",
+    "readTime": "4 min read"
+  },
+  {
+    "id": 4,
+    "title": "Chocolate Lava Cake",
+    "date": "2026-08-04",
+    "category": "Dessert",
+    "image": "https://picsum.photos/seed/cake1/800/600",
+    "content": "Bake a delicious chocolate lava cake with a gooey molten center that's perfect for special occasions.",
+    "readTime": "7 min read"
+  },
+  {
+    "id": 5,
+    "title": "Fresh Caesar Salad",
+    "date": "2026-08-05",
+    "category": "Salad",
+    "image": "https://picsum.photos/seed/salad1/800/600",
+    "content": "Crisp romaine lettuce tossed with homemade Caesar dressing, parmesan cheese, and crunchy croutons.",
+    "readTime": "4 min read"
+  },
+  {
+    "id": 6,
+    "title": "Spicy Beef Burger",
+    "date": "2026-08-06",
+    "category": "Burger",
+    "image": "https://picsum.photos/seed/burger1/800/600",
+    "content": "Juicy grilled beef burger topped with cheddar cheese, lettuce, tomatoes, onions, and spicy sauce.",
+    "readTime": "5 min read"
+  },
+  {
+    "id": 7,
+    "title": "Homemade Sushi Rolls",
+    "date": "2026-08-07",
+    "category": "Japanese",
+    "image": "https://picsum.photos/seed/sushi1/800/600",
+    "content": "Prepare delicious sushi rolls with fresh salmon, cucumber, avocado, and perfectly seasoned rice.",
+    "readTime": "8 min read"
+  },
+  {
+    "id": 8,
+    "title": "Thai Green Curry",
+    "date": "2026-08-08",
+    "category": "Thai",
+    "image": "https://picsum.photos/seed/curry1/800/600",
+    "content": "A flavorful Thai green curry made with coconut milk, chicken, vegetables, and aromatic herbs.",
+    "readTime": "6 min read"
+  },
+  {
+    "id": 9,
+    "title": "Fluffy Pancakes",
+    "date": "2026-08-09",
+    "category": "Breakfast",
+    "image": "https://picsum.photos/seed/pancake1/800/600",
+    "content": "Soft and fluffy pancakes served with maple syrup, butter, strawberries, and blueberries.",
+    "readTime": "5 min read"
+  },
+  {
+    "id": 10,
+    "title": "Grilled Salmon",
+    "date": "2026-08-10",
+    "category": "Seafood",
+    "image": "https://picsum.photos/seed/salmon1/800/600",
+    "content": "Perfectly grilled salmon fillets seasoned with herbs, lemon, and garlic butter.",
+    "readTime": "7 min read"
+  }
+]

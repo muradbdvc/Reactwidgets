@@ -37,13 +37,13 @@ export default function Contact() {
   return (
     <div>
       <div className="top-content">
-        <h2 className="title">Contuct Us</h2>
+        <h2 className="title">Contact Us</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library,</p>
       </div>
     <div className="page">
 
       <div className="contact-layout flex">
-        <div className="contact-card basis-1/2">
+        <div className="contact-card basis-1/2 w-full">
           <h2>Contact</h2>
           <p className="contact-subtitle">Have a question or project? Drop a message.</p>
           <form className="contact-form" onSubmit={handleSubmit}>
@@ -74,8 +74,8 @@ export default function Contact() {
             <button type="submit" className="submit-btn">Send Message</button>
           </form>
         </div>
-        <div className="img basis-1/2">
-          <img src={thumbnail} alt="contact" />
+        <div className="img basis-1/2 h-150 rounded-2xl truncate">
+          <img src={thumbnail} alt="contact" className='w-full '/>
         </div>
 
       </div>
@@ -85,7 +85,7 @@ export default function Contact() {
           <div className="map-container">
             <iframe
               title="Location Map"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=18/23.230610/91.114651&layer=mapnik"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=91.1091%2C23.2261%2C91.1191%2C23.2343&layer=mapnik&marker=23.2302%2C91.1141"
               allowFullScreen
               loading="lazy"
             />
